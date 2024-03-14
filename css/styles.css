@@ -60,13 +60,13 @@ img {
 }
 
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .container{
         max-width: 768px;
     }
 }
 
-@media screen and (min-width: 1158px) {
+@media only screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
         padding-left: 15px;
@@ -172,7 +172,7 @@ img {
     border: none;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .menu{
         display: flex;
         gap: 40px;
@@ -251,7 +251,7 @@ img {
         }
 }
 
-@media screen and (min-width: 1158px) {
+@media only screen and (min-width: 1158px) {
     .logo{
         margin-right: 76px;  
     }
@@ -274,7 +274,7 @@ img {
         url("../images/hero-image-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover cover;
 }
 
 .hero-container {
@@ -321,13 +321,18 @@ img {
     background-color: #404BBF;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-image-mobile@2x.jpg');
+    }
+}
+
+@media only screen and (min-width: 768px) {
     .hero{
         max-width: 768px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url("../images/hero-image.jpg");
     }
-
     .main-title {
         max-width: 496px;
         font-size: 56px;
@@ -338,15 +343,21 @@ img {
     }    
 }
 
-@media screen and (min-width: 1158px) {
+
+@media only screen and (min-width: 1158px) {
 .hero {
-        max-width: 1158px;
+        max-width: 1440px;
     }
     .hero-container {
         padding: 188px 0;
     }
 }
+@media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
+    .hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-image@2x.jpg');
+    }
+}
 
-@media screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {}
 
-@media screen and (min-width: 1158px) {}
+@media only screen and (min-width: 1158px) {}
