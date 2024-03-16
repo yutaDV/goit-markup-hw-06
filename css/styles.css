@@ -939,8 +939,8 @@ img {
         max-width: 768px;
         display: flex;
         flex-direction: row;
+        align-items: baseline;
         flex-wrap: wrap;
-        align-items: center;
         gap: 24px;
         margin-left: 108px;
         }
@@ -968,9 +968,7 @@ img {
 @media only screen and (min-width: 1158px) {
     .footer-content {
         max-width: 1158px;
-        display: flex;
         justify-content: space-between;
-        align-items: baseline;
         flex-wrap: nowrap;
         margin-left: auto;
         margin-right: auto;
