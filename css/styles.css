@@ -969,17 +969,24 @@ img {
     .footer-content {
         max-width: 1158px;
         display: flex;
+        justify-content: space-between;
         align-items: baseline;
         flex-wrap: nowrap;
         margin-left: auto;
         margin-right: auto;
         }
+    .footer-section-first{
+        margin-right: 40px;
+    }
     .footer-subscribe-input-wrapper {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 80px;
+        gap: 20px;
         }
+    .footer-socia-container{
+        margin-bottom: 0;
+    }
 }
 
 
