@@ -276,6 +276,7 @@ img {
 
 /* hero */
 .hero {
+    padding: 72px 0;
     margin-left: auto;
     margin-right: auto;
     max-width: 768px;
@@ -287,7 +288,6 @@ img {
 }
 
 .hero-container {
-    padding: 72px 0;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -431,6 +431,7 @@ img {
         margin-top: 168px;
     }
     .mobile-address-list{
+        font-style: normal;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -573,7 +574,7 @@ img {
 .team-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap:72px;
     align-items: center;
     
 }
@@ -655,7 +656,7 @@ img {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
         justify-content: center;
     }
     .team-list-item {
@@ -717,7 +718,6 @@ img {
 }
 
 .portfolio-list-item {
-    border: 1px solid #f4f4fd;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -785,6 +785,7 @@ img {
     max-width: 320px;
     display: flex;
     flex-direction: column;
+    gap: 72px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -793,7 +794,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 72px;
 }
 
 .logo-footer {
@@ -819,7 +819,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 16px;
     width: 264px;
 
 }
@@ -828,7 +827,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 72px;
 }
 
 .social-media-title {
@@ -936,20 +934,20 @@ img {
 
 @media only screen and (min-width: 768px) {
     .footer-content {
-        max-width: 768px;
+        max-width: 568px;
         display: flex;
         flex-direction: row;
         align-items: baseline;
         flex-wrap: wrap;
-        gap: 24px;
-        margin-left: 108px;
+        row-gap: 72px;
+        column-gap: 24px;
         }
 
     .footer-subscribe-input-wrapper {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px 72px;
+        gap: 24px;
         align-items: flex-start;
     }    
         
@@ -968,13 +966,13 @@ img {
 @media only screen and (min-width: 1158px) {
     .footer-content {
         max-width: 1158px;
-        justify-content: space-between;
         flex-wrap: nowrap;
         margin-left: auto;
         margin-right: auto;
+        gap: 0;
         }
     .footer-section-first{
-        margin-right: 40px;
+        margin-right: 120px;
     }
     .footer-subscribe-input-wrapper {
         display: flex;
@@ -983,6 +981,7 @@ img {
         gap: 20px;
         }
     .footer-socia-container{
+        margin-right: 80px;
         margin-bottom: 0;
     }
 }
