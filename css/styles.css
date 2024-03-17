@@ -564,6 +564,9 @@ img {
     .about-us-list-item-title{
         font-size: 20px;
     }
+    .about-us-list-item-text {
+        font-weight: 400;
+    }
 }
 
 /*our-team */
